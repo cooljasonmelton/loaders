@@ -68,6 +68,72 @@ body{
 
 /* EXAMPLE 3 */
 
-@keyframes example-three{
+#example-3{
+    width: 5em;
+    height: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.3em solid var(--loader-bg-color);
+    border-left: 0.3em solid var(--loader-acc-color);
     
+    background-color: var(--loader-bg-color);
+   
+    animation-name: example-three;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example-three{
+    0% { transform: rotateY(0deg);}
+    50% { transform: rotateY(180deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+
+/* EXAMPLE 4 */
+
+#example-4{
+    position: relative;
+    width: 10em;
+    height: 10em;
+}
+
+.ball {
+    position: absolute;
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    background-color: var(--loader-bg-color);
+    margin: 0.2em;
+    animation-name: example-four;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+#ball-1{
+    top: 2em;
+    left: 0em;
+}
+#ball-2{
+    top: 2em;
+    left: 3em;
+    animation-delay: 0.5s;
+}
+#ball-3{
+    top: 2em;
+    left: 6em;
+    animation-delay: 1s;
+}
+
+@keyframes example-four{
+    from  {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 2em;
+        height: 2em;
+    }
 }
