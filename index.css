@@ -24,7 +24,7 @@ body{
     border: 0.75em solid var(--loader-bg-color);
     border-top-color: var(--loader-acc-color); /* overrides top color to stand out */
     
-    animation: 2s infinite example-one;
+    animation: 2s infinite steps(30) example-one;
 }
 
 @keyframes example-one{
